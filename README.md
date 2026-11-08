@@ -1,5 +1,5 @@
-# AnodeFlex_Menu_Beta
+# Calculadora_ANODEFLEX_Gama
 
-Menú instalable de las seis calculadoras ANODEFLEX Beta. Cada aplicación calcula las resistencias de cable a partir de las tensiones de nodo medidas y conserva una fuente para la regulación.
+Menú de seis calculadoras Gama para mediciones de campo con ramas instaladas o ausentes y regulación mediante una sola inyección.
 
-Ejecute `node tests/static.test.js`. GitHub Pages publica la carpeta `docs`.
+Ejecute `node tests/static.test.js`. GitHub Pages publica `docs`.
