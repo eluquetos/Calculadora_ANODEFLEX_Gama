@@ -1,9 +1,9 @@
 const APPS=[
-  {id:"ANODEFLEX_2N_4R_1INY_v1.3.0",name:"2 nodos · medición 1 + regulación 1",code:"2N / 4R",nodes:2,branches:4,injections:1,description:"Una medición de campo y una inyección para regular las cuatro ramas.",accent:"orange"},
-  {id:"ANODEFLEX_4N_8R_1INY_CAL_1X4_v1.1.0",name:"4 nodos · medición 1 + regulación 1",code:"4N / 8R",nodes:4,branches:8,injections:1,description:"Una medición de campo en cuatro nodos y una inyección para regular las ocho ramas.",accent:"blue"},
-  {id:"ANODEFLEX_4N_8R_2INY_CAL_1X4_v1.0.1",name:"4 nodos · medición 2 + regulación 1",code:"2+2 / 8R",nodes:4,branches:8,injections:2,description:"Dos mediciones de dos nodos cada una y una inyección para regular las ocho ramas.",accent:"violet"},
-  {id:"ANODEFLEX_5N_10R_2INY_CAL_1X5_v1.0.0",name:"5 nodos · medición 2 + regulación 1",code:"3+2 / 10R",nodes:5,branches:10,injections:2,description:"Mediciones de tres y dos nodos, con una inyección para regular las diez ramas.",accent:"cyan"},
-  {id:"ANODEFLEX_6N_12R_2INY_CAL_1X6_v1.0.0",name:"6 nodos · medición 2 + regulación 1",code:"3+3 / 12R",nodes:6,branches:12,injections:2,description:"Dos mediciones de tres nodos cada una y una inyección para regular las doce ramas.",accent:"pink"}
+  {id:"ANODEFLEX_2N_4R_1INY_Beta",name:"2 nodos · medición 1 + regulación 1",code:"2N / 4R",nodes:2,branches:4,injections:1,description:"Una medición de campo y una inyección para regular las cuatro ramas.",accent:"orange"},
+  {id:"ANODEFLEX_4N_8R_1INY_CAL_1X4_Beta",name:"4 nodos · medición 1 + regulación 1",code:"4N / 8R",nodes:4,branches:8,injections:1,description:"Una medición de campo en cuatro nodos y una inyección para regular las ocho ramas.",accent:"blue"},
+  {id:"ANODEFLEX_4N_8R_2INY_CAL_1X4_Beta",name:"4 nodos · medición 2 + regulación 1",code:"2+2 / 8R",nodes:4,branches:8,injections:2,description:"Dos mediciones de dos nodos cada una y una inyección para regular las ocho ramas.",accent:"violet"},
+  {id:"ANODEFLEX_5N_10R_2INY_CAL_1X5_Beta",name:"5 nodos · medición 2 + regulación 1",code:"3+2 / 10R",nodes:5,branches:10,injections:2,description:"Mediciones de tres y dos nodos, con una inyección para regular las diez ramas.",accent:"cyan"},
+  {id:"ANODEFLEX_6N_12R_2INY_CAL_1X6_Beta",name:"6 nodos · medición 2 + regulación 1",code:"3+3 / 12R",nodes:6,branches:12,injections:2,description:"Dos mediciones de tres nodos cada una y una inyección para regular las doce ramas.",accent:"pink"}
 ];
 const BASE="https://eluquetos.github.io/";
 const APP_REVISION="ajuste-minimo-20261011";
@@ -23,7 +23,7 @@ function renderMenu(){
 function getApp(id){return APPS.find(app=>app.id===id)}
 function appUrl(app){return BASE+app.id+"/?actualizacion="+APP_REVISION}
 function showMenu({historyMode="push"}={}){
-  frame.removeAttribute("src");viewer.hidden=true;menu.hidden=false;document.body.classList.remove("viewing");document.title="ANODEFLEX · Menú de calculadoras";
+  frame.removeAttribute("src");viewer.hidden=true;menu.hidden=false;document.body.classList.remove("viewing");document.title="ANODEFLEX Beta · Menú de calculadoras";
   if(historyMode==="push")history.pushState({},"",location.pathname);
   window.scrollTo({top:0,behavior:"instant"});
 }

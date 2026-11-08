@@ -1,5 +1,5 @@
-# AnodeFlex_Menu_Calculadora
+# AnodeFlex_Menu_Beta
 
-Portal instalable para seleccionar y ejecutar las cinco calculadoras ANODEFLEX publicadas por `eluquetos`.
+Menú instalable de las cinco calculadoras ANODEFLEX Beta. Cada aplicación calcula las resistencias de cable a partir de las tensiones de nodo medidas y conserva una fuente para la regulación.
 
-La calculadora seleccionada se muestra dentro del portal. La barra superior permite volver al menú, recargarla o abrirla en pantalla completa. Cada calculadora conserva sus propios datos guardados.
+Ejecute `node tests/static.test.js`. GitHub Pages publica la carpeta `docs`.
